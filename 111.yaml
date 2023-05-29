@@ -23,17 +23,7 @@ spec:
     singular: rabbitmqcluster
   scope: Namespaced
   versions:
-  - additionalPrinterColumns:
-    - jsonPath: .status.conditions[?(@.type == 'AllReplicasReady')].status
-      name: AllReplicasReady
-      type: string
-    - jsonPath: .status.conditions[?(@.type == 'ReconcileSuccess')].status
-      name: ReconcileSuccess
-      type: string
-    - jsonPath: .metadata.creationTimestamp
-      name: Age
-      type: date
-    name: v1beta1
+  - name: v1beta1
     schema:
       openAPIV3Schema:
         description: RabbitmqCluster is the Schema for the RabbitmqCluster API. Each
