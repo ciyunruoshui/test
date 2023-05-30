@@ -25,7 +25,7 @@ spec:
   versions:
     - name: v1beta1
       schema:
-        openAPIV3Schema:.
+        openAPIV3Schema:
           properties:
             apiVersion:
               type: string
